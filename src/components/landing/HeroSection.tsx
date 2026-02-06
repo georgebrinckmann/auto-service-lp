@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import logoPositive from "@/assets/logo-positive.png";
-import heroDashboard from "@/assets/hero-dashboard.png";
+import DashboardMockup from "@/components/landing/DashboardMockup";
 
 const clientLogos = ["Monsanto-Bayer", "GSK", "Vale", "LOG-IN Logística"];
 
@@ -63,15 +63,10 @@ const HeroSection = () => {
             </p>
           </div>
 
-          {/* Right Column - Floating dashboard mockup */}
+          {/* Right Column - Dashboard mockup */}
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative animate-float">
-              <div className="absolute -inset-4 bg-primary/5 rounded-3xl blur-2xl" />
-              <img
-                src={heroDashboard}
-                alt="Dashboard Auto Service em ação"
-                className="relative w-full max-w-lg rounded-3xl shadow-float"
-              />
+              <DashboardMockup />
             </div>
           </div>
         </div>
