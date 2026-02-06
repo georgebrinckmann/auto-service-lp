@@ -19,26 +19,32 @@ const PainPointsSection = () => {
   return (
     <section className="section-padding bg-background">
       <div className="container-landing">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center max-w-4xl mx-auto mb-12 text-balance leading-snug">
-          Se você não sabe exatamente quanto cada veículo da sua frota custa por mês, você está sangrando dinheiro.
-        </h2>
+        <div className="text-center mb-14">
+          <span className="pill-badge bg-destructive/10 text-destructive mb-4">
+            ⚠️ Problemas comuns
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold max-w-4xl mx-auto text-balance leading-tight">
+            Se você não sabe exatamente quanto cada veículo da sua frota custa por mês,{" "}
+            <span className="text-destructive">você está sangrando dinheiro.</span>
+          </h2>
+        </div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-14">
           {painPoints.map((point, i) => (
             <div
               key={i}
-              className="bg-card rounded-2xl p-8 shadow-card border border-border hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300"
+              className="group bg-card rounded-3xl p-8 shadow-card hover:shadow-card-hover hover:-translate-y-2 transition-all duration-500 border border-transparent hover:border-destructive/10"
             >
-              <div className="w-12 h-12 rounded-full bg-destructive/10 flex items-center justify-center mb-5">
-                <X className="w-6 h-6 text-destructive" />
+              <div className="w-14 h-14 rounded-2xl bg-destructive/10 flex items-center justify-center mb-6 group-hover:bg-destructive/15 transition-colors">
+                <X className="w-7 h-7 text-destructive" />
               </div>
-              <h3 className="text-lg font-semibold mb-3">{point.title}</h3>
+              <h3 className="text-lg font-bold mb-3 leading-snug">{point.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{point.description}</p>
             </div>
           ))}
         </div>
 
-        <p className="text-center text-muted-foreground text-lg max-w-3xl mx-auto italic">
+        <p className="text-center text-muted-foreground text-lg max-w-3xl mx-auto">
           Enquanto isso, seus concorrentes já sabem exatamente onde cortar gordura sem perder um dia de operação.
         </p>
       </div>
