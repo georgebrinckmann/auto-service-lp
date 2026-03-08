@@ -5,27 +5,27 @@ const cases = [
   {
     icon: TrendingDown,
     sector: "SETOR DE BEBIDAS",
-    badge: "Multinacional com frota de grande porte",
+    badge: "Multinacional · 1.200 veículos",
     title: "Economia de 20% nos custos de manutenção em 12 meses",
-    description: "Centralização de ordens de serviço eliminou \"gatos\" de motorista e renegociação em bloco com oficinas.",
+    description: "Centralização de ordens de serviço, eliminação de desvios operacionais e renegociação em bloco com oficinas credenciadas resultaram em economia expressiva na gestão de uma frota de grande porte.",
     color: "bg-brand-blue-light text-primary",
     iconBg: "bg-primary/10",
   },
   {
     icon: Shield,
-    sector: "FARMACÊUTICA",
-    badge: "15 anos de parceria · 95% de disponibilidade",
-    title: "Economia consistente acima de 15% ao ano + documentação organizada",
-    description: "Controle de prazos de manutenção preventiva evitou corretivas (4x mais caras).",
+    sector: "INDÚSTRIA FARMACÊUTICA",
+    badge: "Multinacional · 15 anos de parceria · 95% disponibilidade",
+    title: "Economia consistente acima de 15% ao ano com documentação estruturada",
+    description: "Controle rigoroso de prazos de manutenção preventiva evitou corretivas (4x mais caras), enquanto toda a parte documental foi estruturada com política validada e aprovada ao longo do contrato — garantindo compliance em auditorias.",
     color: "bg-brand-purple-light text-primary",
     iconBg: "bg-primary/10",
   },
   {
     icon: Activity,
     sector: "MINERAÇÃO",
-    badge: "25 anos de contrato · Frota compartilhada",
-    title: "Redução drástica de ociosidade com monitoramento integrado",
-    description: "Gestão compartilhada entre transporte de funcionários e veículos operacionais liberou recursos.",
+    badge: "25+ anos de contrato · Frota compartilhada",
+    title: "Redução drástica de ociosidade com gestão integrada e modelo pool",
+    description: "Gestão compartilhada entre transporte de funcionários em veículos fretados e veículos operacionais no formato pool, com soluções de monitoramento, segurança e controle documental — liberando recursos e gerando expressivos índices de economia.",
     color: "bg-brand-green-light text-brand-teal",
     iconBg: "bg-brand-teal/10",
   },
@@ -44,8 +44,8 @@ const SocialProofSection = () => {
             🏆 Cases de sucesso
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold max-w-4xl mx-auto text-balance leading-tight">
-            Por que grandes empresas confiam na Auto Service{" "}
-            <span className="text-primary">há mais de 15 anos?</span>
+            Por que grandes empresas confiam na nossa solução{" "}
+            <span className="text-primary">há mais de 30 anos?</span>
           </h2>
         </div>
 

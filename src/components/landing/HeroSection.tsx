@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import logoPositive from "@/assets/logo-positive.png";
 import DashboardMockup from "@/components/landing/DashboardMockup";
-const clientLogos = ["Monsanto-Bayer", "GSK", "Vale", "LOG-IN Logística"];
+const clientLogos = ["Multinacional de Bebidas", "Farmacêutica", "Mineração", "Logística"];
 const HeroSection = () => {
   const scrollToForm = () => {
     document.getElementById("diagnostico")?.scrollIntoView({
@@ -37,11 +37,11 @@ const HeroSection = () => {
               ⚡ Gestão inteligente de frotas
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-black leading-[1.08] text-foreground text-balance">
-              Quanto da sua frota você está perdendo em custos que{" "}
-              <span className="text-primary">ninguém te mostra?</span>
+              A ferramenta que faz o gestor{" "}
+              <span className="text-primary">mostrar resultados.</span>
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-xl">
-              Gestores de empresas como Monsanto-Bayer, GSK e Vale estão reduzindo até 20% dos custos de manutenção enquanto mantêm 95% de disponibilidade — sem adicionar um funcionário sequer.
+              Gestores de grandes empresas estão economizando mais de R$ 2.000.000,00 com nossa solução — reduzindo custos de manutenção em até 20% enquanto mantêm 95% de disponibilidade da frota.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <Button onClick={scrollToForm} className="bg-brand-yellow hover:bg-brand-yellow-hover text-accent-foreground font-bold text-base uppercase tracking-wide px-8 py-6 rounded-full shadow-cta hover:shadow-cta-hover hover:-translate-y-1 transition-all duration-300">
@@ -67,7 +67,7 @@ const HeroSection = () => {
         {/* Trusted by logos */}
         <div className="mt-20 text-center">
           <p className="text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-6">
-            Confiança de milhões de clientes
+            Confiança de grandes empresas de diversos segmentos
           </p>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
             {clientLogos.map(name => <span key={name} className="text-foreground/30 hover:text-foreground/60 text-base font-bold tracking-wide uppercase transition-colors duration-300 cursor-default">
