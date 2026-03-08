@@ -1,8 +1,8 @@
 const stats = [
-  { value: "20%", label: "Economia média em manutenção" },
+  { value: "R$ 2Mi+", label: "Em economia gerada para clientes" },
   { value: "95%", label: "Disponibilidade da frota" },
-  { value: "15+", label: "Anos de experiência" },
-  { value: "4x", label: "Menos custo vs. corretiva" },
+  { value: "30+", label: "Anos de experiência" },
+  { value: "70mil", label: "Veículos gerenciados" },
 ];
 
 const StatsSection = () => {

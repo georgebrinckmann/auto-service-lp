@@ -67,7 +67,7 @@ const HeroSection = () => {
         {/* Trusted by logos */}
         <div className="mt-20 text-center">
           <p className="text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-6">
-            Confiança de milhões de clientes
+            Confiança de grandes empresas de diversos segmentos
           </p>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
             {clientLogos.map(name => <span key={name} className="text-foreground/30 hover:text-foreground/60 text-base font-bold tracking-wide uppercase transition-colors duration-300 cursor-default">
