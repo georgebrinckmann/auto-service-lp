@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import logoPositive from "@/assets/logo-positive.png";
 import DashboardMockup from "@/components/landing/DashboardMockup";
-const clientLogos = ["Monsanto-Bayer", "GSK", "Vale", "LOG-IN Logística"];
+const clientLogos = ["Multinacional de Bebidas", "Farmacêutica", "Mineração", "Logística"];
 const HeroSection = () => {
   const scrollToForm = () => {
     document.getElementById("diagnostico")?.scrollIntoView({
