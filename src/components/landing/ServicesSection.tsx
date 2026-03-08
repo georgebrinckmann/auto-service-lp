@@ -1,4 +1,5 @@
 import { Car, Bus, Wrench, FileCheck, MapPin, Shield } from "lucide-react";
+import { ScrollReveal } from "@/hooks/useScrollReveal";
 
 const services = [
   {
@@ -40,40 +41,37 @@ const services = [
 ];
 
 const ServicesSection = () => {
-  const scrollToForm = () => {
-    document.getElementById("diagnostico")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section className="section-padding bg-background">
       <div className="container-landing">
-        <div className="text-center mb-14">
-          <span className="pill-badge bg-primary/10 text-primary mb-4">
-            🔧 Nossos Serviços
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold max-w-4xl mx-auto text-balance leading-tight">
-            Soluções completas para{" "}
-            <span className="text-primary">cada tipo de frota</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-4">
-            Da frota própria à locada, do transporte ao monitoramento — tudo integrado em uma única plataforma.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-14">
+            <span className="pill-badge bg-primary/10 text-primary mb-4">
+              🔧 Nossos Serviços
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold max-w-4xl mx-auto text-balance leading-tight">
+              Soluções completas para{" "}
+              <span className="text-primary">cada tipo de frota</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-4">
+              Da frota própria à locada, do transporte ao monitoramento — tudo integrado em uma única plataforma.
+            </p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, i) => (
-            <div
-              key={i}
-              className="group bg-card rounded-3xl p-8 shadow-card hover:shadow-card-hover hover:-translate-y-2 transition-all duration-500 flex flex-col"
-            >
-              <div className={`w-14 h-14 rounded-2xl ${service.iconBg} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}>
-                <service.icon className="w-7 h-7 text-primary" />
+            <ScrollReveal key={i} delay={i * 100}>
+              <div className="group bg-card rounded-3xl p-8 shadow-card hover:shadow-card-hover hover:-translate-y-2 transition-all duration-500 flex flex-col border border-border/40 h-full">
+                <div className={`w-14 h-14 rounded-2xl ${service.iconBg} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
+                  <service.icon className="w-7 h-7 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold mb-3 leading-snug">{service.title}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm flex-grow">
+                  {service.description}
+                </p>
               </div>
-              <h3 className="text-lg font-bold mb-3 leading-snug">{service.title}</h3>
-              <p className="text-muted-foreground leading-relaxed text-sm flex-grow">
-                {service.description}
-              </p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
