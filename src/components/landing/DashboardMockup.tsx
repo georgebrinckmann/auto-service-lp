@@ -14,7 +14,7 @@ const DashboardMockup = () => (
     <div className="bg-primary-foreground/15 backdrop-blur-sm rounded-2xl p-5 mb-4">
       <p className="text-primary-foreground/70 text-sm font-medium mb-1">Economia Total</p>
       <p className="text-primary-foreground text-4xl md:text-5xl font-extrabold tracking-tight">
-        R$ 847.520
+        R$ 2.114.520
       </p>
     </div>
 
