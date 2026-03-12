@@ -3,31 +3,31 @@ import { Eye, FileCheck, Gauge } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollReveal";
 
 const pillars = [
-  {
-    icon: Eye,
-    number: "01",
-    title: "Visibilidade total em tempo real",
-    description: "Painel único com custos por veículo, ordens de serviço centralizadas e alertas automáticos de desvios.",
-    benefit: "Saber exatamente onde cada real está indo, antes do orçamento estourar.",
-    gradient: "from-primary/10 to-brand-blue-light",
-  },
-  {
-    icon: FileCheck,
-    number: "02",
-    title: "Controle documental blindado",
-    description: "Toda manutenção rastreada, aprovada e arquivada conforme sua política interna.",
-    benefit: "Zero dor de cabeça em auditorias. Compliance garantido.",
-    gradient: "from-brand-purple-light to-primary/5",
-  },
-  {
-    icon: Gauge,
-    number: "03",
-    title: "Foco em disponibilidade, não só preço",
-    description: "Manutenção preventiva programada para evitar paradas não planejadas (que custam 4x mais).",
-    benefit: "Frota rodando. Operação sem surpresas.",
-    gradient: "from-brand-green-light to-brand-teal/5",
-  },
-];
+{
+  icon: Eye,
+  number: "01",
+  title: "Visibilidade total em tempo real",
+  description: "Painel único com custos por veículo, ordens de serviço centralizadas e alertas automáticos de desvios.",
+  benefit: "Saber exatamente onde cada real está indo, antes do orçamento estourar.",
+  gradient: "from-primary/10 to-brand-blue-light"
+},
+{
+  icon: FileCheck,
+  number: "02",
+  title: "Controle documental blindado",
+  description: "Toda manutenção rastreada, aprovada e arquivada conforme sua política interna.",
+  benefit: "Zero dor de cabeça em auditorias. Compliance garantido.",
+  gradient: "from-brand-purple-light to-primary/5"
+},
+{
+  icon: Gauge,
+  number: "03",
+  title: "Foco em disponibilidade, não só preço",
+  description: "Manutenção preventiva programada para evitar paradas não planejadas (que custam 4x mais).",
+  benefit: "Frota rodando. Operação sem surpresas.",
+  gradient: "from-brand-green-light to-brand-teal/5"
+}];
+
 
 const HowItWorksSection = () => {
   const scrollToForm = () => {
@@ -50,14 +50,14 @@ const HowItWorksSection = () => {
               <span className="text-primary">economia real</span> sem você adicionar trabalho
             </h2>
             <p className="text-lg text-muted-foreground">
-              Não é só software. É gestão 100% terceirizada da sua frota.
+              Não é só software. É o que transforma o gestor em referência de resultados.
             </p>
           </div>
         </ScrollReveal>
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-14">
-          {pillars.map((p, i) => (
-            <ScrollReveal key={i} delay={i * 150}>
+          {pillars.map((p, i) =>
+          <ScrollReveal key={i} delay={i * 150}>
               <div className={`group relative bg-gradient-to-br ${p.gradient} rounded-3xl p-8 hover:-translate-y-2 transition-all duration-500 border border-border/30 h-full`}>
                 <span className="absolute top-6 right-6 text-5xl font-black text-primary/8">{p.number}</span>
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/15 group-hover:scale-110 transition-all duration-300">
@@ -73,22 +73,22 @@ const HowItWorksSection = () => {
                 </div>
               </div>
             </ScrollReveal>
-          ))}
+          )}
         </div>
 
         <ScrollReveal>
           <div className="text-center">
             <Button
               onClick={scrollToForm}
-              className="bg-brand-yellow hover:bg-brand-yellow-hover text-accent-foreground font-bold text-base uppercase tracking-wide px-10 py-6 rounded-full shadow-cta hover:shadow-cta-hover hover:-translate-y-1 transition-all duration-300"
-            >
+              className="bg-brand-yellow hover:bg-brand-yellow-hover text-accent-foreground font-bold text-base uppercase tracking-wide px-10 py-6 rounded-full shadow-cta hover:shadow-cta-hover hover:-translate-y-1 transition-all duration-300">
+              
               Agendar diagnóstico gratuito
             </Button>
           </div>
         </ScrollReveal>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HowItWorksSection;
