@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import HeroSection from "@/components/landing/HeroSection";
 import PainPointsSection from "@/components/landing/PainPointsSection";
 import SocialProofSection from "@/components/landing/SocialProofSection";
@@ -13,6 +14,19 @@ import FinalReinforcementSection from "@/components/landing/FinalReinforcementSe
 import FooterSection from "@/components/landing/FooterSection";
 
 const Index = () => {
+  useEffect(() => {
+    // Handle direct access with hash (e.g., #diagnostico)
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.getElementById(hash.replace("#", ""));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen overflow-hidden">
       <HeroSection />
