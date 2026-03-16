@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import logoPositive from "@/assets/logo-positive.png";
+import heroBgCars from "@/assets/hero-bg-cars.jpg";
 import DashboardMockup from "@/components/landing/DashboardMockup";
 const clientLogos = ["Multinacional de Bebidas", "Farmacêutica", "Mineração", "Logística"];
 const HeroSection = () => {
@@ -9,6 +10,11 @@ const HeroSection = () => {
     });
   };
   return <section className="relative bg-hero-gradient overflow-hidden min-h-[700px]">
+      {/* Background image with subtle overlay */}
+      <div className="absolute inset-0 z-0">
+        <img src={heroBgCars} alt="" className="w-full h-full object-cover object-center" loading="lazy" />
+        <div className="absolute inset-0 bg-background/85 backdrop-blur-[2px]" />
+      </div>
       {/* Decorative floating shapes */}
       <div className="absolute top-20 left-10 w-20 h-20 rounded-full bg-primary/5 animate-float" />
       <div className="absolute top-40 right-20 w-14 h-14 rounded-full bg-accent/10 animate-float" style={{
