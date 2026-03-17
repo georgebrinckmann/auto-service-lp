@@ -52,7 +52,7 @@ const FooterSection = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-primary" />
-                  (31) 3333-0000
+                  (11) 2391-2730
                 </li>
                 <li className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-primary" />
