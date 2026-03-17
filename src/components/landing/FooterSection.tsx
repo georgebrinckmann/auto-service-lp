@@ -56,7 +56,7 @@ const FooterSection = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-primary" />
-                  Maceió, AL
+                  São Paulo - Comercial
                 </li>
               </ul>
             </div>
